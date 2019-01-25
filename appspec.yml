@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/public_html
+hooks:
+  AfterInstall:
+    - location: deploy/after_deploy
+      timeout: 300
+      runas: root

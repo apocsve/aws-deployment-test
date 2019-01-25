@@ -1,0 +1,7 @@
+#!/bin/bash
+
+service nginx restart
+
+echo "Succesfully completed deploy at: " > deployment.log
+
+date > deployment.log
